@@ -4,7 +4,14 @@ const config: Core.Config.Middlewares = [
   'strapi::logger',
   'strapi::errors',
   'strapi::security',
-  'strapi::cors',
+  {
+    name: 'strapi::cors',
+    config: {
+      origin: ['https://ceradd.vercel.app', 'http://localhost:3000'],
+      methods: ['GET', 'HEAD', 'OPTIONS'],
+      headers: ['Content-Type', 'Authorization'],
+    },
+  },
   'strapi::poweredBy',
   'strapi::query',
   'strapi::body',
