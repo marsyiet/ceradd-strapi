@@ -1,0 +1,23 @@
+
+# Server
+HOST=0.0.0.0
+PORT=1337
+
+# Secrets
+APP_KEYS=2aGqKhSd6mCjSHU4uYzCKQ==,gO7g1m8fmuTVNUI9+mvUnQ==,6mLk1uF+mflqZyNaVHqnfg==,tHa4ETQA5D+vDpxhVC2aBg==
+API_TOKEN_SALT=pRam6UB9AwReyw5jQH5zCw==
+ADMIN_JWT_SECRET=2L7u4+A9NE+cQSzOXYR0HA==
+JWT_SECRET=Lkk4aLonuRD1yoAL0kls0w==
+TRANSFER_TOKEN_SALT=H3e7SvKTbuDLUFM8S9cVoA==
+ENCRYPTION_KEY=4i4ncn8ZzlQ0lnha/5M2/g==
+
+# Database
+DATABASE_CLIENT=postgres
+DATABASE_HOST=primary.ceradd-postgre--jwmwxf9g8hhx.addon.code.run
+DATABASE_PORT=5432
+DATABASE_NAME=_ff3a206f1106
+DATABASE_USERNAME=_ad493ef2766b7346
+DATABASE_PASSWORD=_97630e4ae4efb55283ed52d4217360
+DATABASE_SSL=false
+DATABASE_FILENAME=.tmp/data.db
+POSTGRE_URL=postgresql://_ad493ef2766b7346:_97630e4ae4efb55283ed52d4217360@primary.ceradd-postgre--jwmwxf9g8hhx.addon.code.run:5432/_ff3a206f1106?sslmode=require
