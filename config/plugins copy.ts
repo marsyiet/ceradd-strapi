@@ -42,11 +42,11 @@ const config = ({ env }: Core.Config.Shared.ConfigParams): Core.Config.Plugin =>
       },
       actionOptions: {
         upload: {
-          folder: 'ceradd/upload',
+          folder: 'ceradd/uploads',
           asset_folder: 'ceradd/uploads',
         },
         uploadStream: {
-          folder: 'ceradd/upload',
+          folder: 'ceradd/uploads',
           asset_folder: 'ceradd/uploads',
         },
         delete: {},
