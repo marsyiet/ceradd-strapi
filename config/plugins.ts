@@ -34,6 +34,23 @@ const config = ({ env }: Core.Config.Shared.ConfigParams): Core.Config.Plugin =>
   },
   upload: {
     config: {
+      provider: 'cloudinary',
+      providerOptions: {
+        cloud_name: env('CLOUDINARY_NAME'),
+        api_key: env('CLOUDINARY_KEY'),
+        api_secret: env('CLOUDINARY_SECRET'),
+      },
+      actionOptions: {
+        upload: {
+          folder: 'ceradd/uploads',
+          asset_folder: 'ceradd/uploads',
+        },
+        uploadStream: {
+          folder: 'ceradd/uploads',
+          asset_folder: 'ceradd/uploads',
+        },
+        delete: {},
+      },
       security: {
         allowedTypes: allowedMediaTypes,
         deniedTypes,
