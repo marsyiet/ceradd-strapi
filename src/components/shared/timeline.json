@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_shared_timelines",
+  "info": {
+    "displayName": "Timeline",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "Event": {
+      "type": "text"
+    },
+    "Date": {
+      "type": "date"
+    }
+  },
+  "config": {}
+}

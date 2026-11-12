@@ -62,6 +62,18 @@ export interface SharedSlider extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedTimeline extends Struct.ComponentSchema {
+  collectionName: 'components_shared_timelines';
+  info: {
+    displayName: 'Timeline';
+    icon: 'bulletList';
+  };
+  attributes: {
+    Date: Schema.Attribute.Date;
+    Event: Schema.Attribute.Text;
+  };
+}
+
 declare module '@strapi/strapi' {
   export namespace Public {
     export interface ComponentSchemas {
@@ -70,6 +82,7 @@ declare module '@strapi/strapi' {
       'shared.rich-text': SharedRichText;
       'shared.seo': SharedSeo;
       'shared.slider': SharedSlider;
+      'shared.timeline': SharedTimeline;
     }
   }
 }
