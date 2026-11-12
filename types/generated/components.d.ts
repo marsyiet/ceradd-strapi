@@ -69,8 +69,8 @@ export interface SharedTimeline extends Struct.ComponentSchema {
     icon: 'bulletList';
   };
   attributes: {
-    Date: Schema.Attribute.Date;
-    Event: Schema.Attribute.Text;
+    date: Schema.Attribute.Date;
+    event: Schema.Attribute.Text;
   };
 }
 

@@ -15,7 +15,7 @@
     }
   },
   "attributes": {
-    "Title": {
+    "title": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -23,7 +23,16 @@
         }
       }
     },
-    "Description": {
+    "slug": {
+      "type": "uid",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "targetField": "title"
+    },
+    "description": {
       "type": "text",
       "pluginOptions": {
         "i18n": {
@@ -31,7 +40,22 @@
         }
       }
     },
-    "Context": {
+    "cover": {
+      "type": "media",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "context": {
       "type": "text",
       "pluginOptions": {
         "i18n": {
@@ -39,7 +63,7 @@
         }
       }
     },
-    "Objectives": {
+    "objectives": {
       "type": "text",
       "pluginOptions": {
         "i18n": {
@@ -47,7 +71,7 @@
         }
       }
     },
-    "Approach": {
+    "approach": {
       "type": "text",
       "pluginOptions": {
         "i18n": {
@@ -65,7 +89,7 @@
       "component": "shared.timeline",
       "repeatable": true
     },
-    "Results": {
+    "results": {
       "type": "text",
       "pluginOptions": {
         "i18n": {
