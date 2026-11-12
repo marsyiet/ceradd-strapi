@@ -746,7 +746,7 @@ export interface ApiProjectProject extends Struct.CollectionTypeSchema {
           localized: true;
         };
       }>;
-    Timeline: Schema.Attribute.Component<'shared.timeline', true> &
+    timeline: Schema.Attribute.Component<'shared.timeline', true> &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;

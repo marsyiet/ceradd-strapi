@@ -79,7 +79,7 @@
         }
       }
     },
-    "Timeline": {
+    "timeline": {
       "type": "component",
       "pluginOptions": {
         "i18n": {
